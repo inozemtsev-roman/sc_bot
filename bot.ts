@@ -36,8 +36,8 @@ bot.onText(/\/start/, (msg: any) => {
         ],
         [
           {
-            text: "✋ Hands",
-            web_app: { url: "https://spatial.mir.one" },
+            text: "💎 Getgems",
+            web_app: { url: "https://getgems.io/fingerprints" },
           },
           {
             text: "🛠 Github",
@@ -73,6 +73,10 @@ Open the full [guide](https://scanner.mir.one)
           },
         ],
         [
+          {
+            text: "💎 Getgems",
+            web_app: { url: "https://getgems.io/fingerprints" },
+          },
           {
             text: "🛠 Github",
             web_app: { url: "https://github.com/mir-one/fingerprints" },
