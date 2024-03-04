@@ -18,10 +18,10 @@ bot.onText(/\/start/, (msg: any) => {
   //todo rm any
   const chatId = msg.chat.id;
 
-  const message = `☝️ * Welcome to TON Fingerprints Scanner *
+  const message = `👆 * Welcome to Fingerprint Scanner *
   \nWebApp "Scanner" is an exciting game in which you have to scan digital fingerprints and earn bulbs and keys. Using an incredibly accurate scanner, your task is to recognize and collect fingerprints in order to get the maximum amount of game resources.
   \nThe main feature of the game is the motivation of players through the achievement standings. You will be able to compete with other players, comparing your results and rising in the ranking. Be the best and become the real masters of fingerprint scanning!
-  \n"Scanner" is based on the NFT collection of open source with [CC0 1.0 Universal license](https://creativecommons.org/publicdomain/zero/1.0/) - [TON Fingerprints](https://getgems.io/collection/fingerprints). Unique and impressive fingerprints are waiting for you, which you can collect and use for your own purposes.
+  \n"Scanner" is based on the NFT collection of open source with [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) Universal license - [TON Fingerprints](https://getgems.io/collection/fingerprints). Unique and impressive fingerprints are waiting for you, which you can collect and use for your own purposes.
   \nImmerse yourself in the fascinating world of fingerprint scanning, compete with friends and reach new heights in the "Scanner"!`;
   const options: SendMessageOptions = {
     parse_mode: "Markdown",
@@ -30,18 +30,18 @@ bot.onText(/\/start/, (msg: any) => {
       inline_keyboard: [
         [
           {
-            text: "☝️ Launch Scanner",
+            text: "👆 Launch Scanner",
             web_app: { url: "https://scanner.mir.one" },
           },
         ],
         [
           {
             text: "💎 Getgems",
-            web_app: { url: "https://getgems.io/fingerprints" },
+            url: "https://getgems.io/fingerprints",
           },
           {
             text: "🛠 Github",
-            web_app: { url: "https://github.com/mir-one/fingerprints" },
+            url: "https://github.com/mir-one/fingerprints",
           },
         ],
       ],
@@ -55,12 +55,24 @@ bot.onText(/\/help/, (msg: any) => {
   //todo rm any
   const chatId = msg.chat.id;
 
-  const message = `How to play Fingerprint Scanner ⚡ 
+  const message = `How to play Fingerprint Scanner 👆
 
-Open the full [guide](https://scanner.mir.one)
+Open the full [guide](https://github.com/mir-one/fingerprints?tab=readme-ov-file#scan)
 
+Click to scan
+Fingerprint is an exciting game in which you have to scan digital fingerprints and earn light bulbs and keys. Using an incredibly accurate scanner, your task is to recognize and collect fingerprints in order to get the maximum amount of game resources.
 
-/help to get this guide`;
+Leagues
+You will be able to compete with other players, comparing your results and rising in the ranking. Be the best and become the real masters of fingerprint scanning!
+
+Earn
+Get daily light bulbs.
+
+FS is based on the NFT collection of open source with [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) Universal license - [TON Fingerprints](https://getgems.io/collection/fingerprints).
+
+Unique and impressive fingerprints are waiting for you, which you can collect and use for your own purposes.
+
+/help me get this guide`;
   const options: SendMessageOptions = {
     parse_mode: "Markdown",
     disable_web_page_preview: true,
@@ -68,18 +80,18 @@ Open the full [guide](https://scanner.mir.one)
       inline_keyboard: [
         [
           {
-            text: "☝️ Launch Scanner",
+            text: "👆 Scanner",
             web_app: { url: "https://scanner.mir.one" },
           },
         ],
         [
           {
             text: "💎 Getgems",
-            web_app: { url: "https://getgems.io/fingerprints" },
+            url: "https://getgems.io/fingerprints",
           },
           {
             text: "🛠 Github",
-            web_app: { url: "https://github.com/mir-one/fingerprints" },
+            url: "https://github.com/mir-one/fingerprints",
           },
         ],
       ],
